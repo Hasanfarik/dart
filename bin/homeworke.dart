@@ -7,9 +7,10 @@ void main(List<String> args) {
 //   print(salarytotal );
 // }  
 // salarytotal();
-void functionary (String name ,var salary,var bouns){
+void functionary (String name ,var salary, bouns){
+ print(name);
   dynamic salarytotal= salary +bouns;
-  return print(name);
+  return print(salarytotal);
 }
 
 functionary('Hasan farik' ,1000 , 500);
