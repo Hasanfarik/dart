@@ -1,3 +1,5 @@
+
+
 void main (){
 var vehicle = Vehicle();
 vehicle.model = 'BMW';
@@ -18,6 +20,7 @@ print(employee.exper);
 print(employee.salary);
 print(employee.bons);
 print(employee.total);
+
 }
 class Vehicle {
   String? _model;
@@ -42,6 +45,4 @@ class Employee{
     return _total;
   }
   set total (int? total) => _total =total;
-
-
 }
