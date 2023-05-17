@@ -1,8 +1,7 @@
 void main(List<String> args) {
-  Game_xo();
-}
+ 
 List <String>values =['1','2','3','4','5','6','7','8','9'];
-void Game_xo(){
+
   print(' __ ___ ___');
   print('|${values[0]} | ${values[1]} |  ${values[2]}|');
   print('|__|___|___|');
