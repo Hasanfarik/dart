@@ -51,11 +51,15 @@ class TicTacToe {
   bool checkwinner(){
     for (int i=0; i<9; i +=3){
       if (board[i] !=' ' && board[i] == board[ i+1] && board[i+1]== board[i+2]){
+              currentplayer = currentplayer =='x'? 'o' : 'x';
+
         return true;
       }
     }
     for (var i = 0; i < 3; i++) {
       if (board[i] !=' ' && board[i]== board[i+1]&&board[i+1]==board[i+2]) {
+              currentplayer = currentplayer =='x'? 'o' : 'x';
+
         return true;
         
       }
@@ -63,16 +67,22 @@ class TicTacToe {
     for (var i = 0; i < 3; i++) 
     {
     if (board[i] !=' ' &&board[i] == board[i+3]&&board[i+3]==board[i+6]) {
+            currentplayer = currentplayer =='x'? 'o' : 'x';
+
       return true;
       
     }  
     }
     // ignore: unrelated_type_equality_checks
     if (board[0] !=' ' && board[0]== board[4] &&board[4]==board[8]) {
+            currentplayer = currentplayer =='x'? 'o' : 'x';
+
       return true;
       
     }
     if (board[2] !=' ' && board[2] == board[4]&&board[4]==board[6]){
+            currentplayer = currentplayer =='x'? 'o' : 'x';
+
       return true;
 
     }
